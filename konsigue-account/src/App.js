@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './assets/img/konsigue_logo.png';
 import './App.css';
-import AppsMenu from './principal/principal';
+import AppsMenu from './principal/principal.jsx';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">konsigue Account</h1>
         </header>
-        <div>
+        <div className="container">
           <AppsMenu></AppsMenu>
         </div>
       </div>
