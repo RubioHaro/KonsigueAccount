@@ -1,10 +1,15 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 import css from "./style.css";
 
 class login extends React.Component {
   static propTypes = {};
   render = () => (
-    <div  className="form-signin p-1 mt-5">
+    <div className="form-signin p-1 mt-5">
       <div class="card bg-light">
         <img
           className="bg-white border-bottom card-img-top img-fluid"
@@ -46,12 +51,15 @@ class login extends React.Component {
                   contraseña
                 </label>
               </div>
-              <button
-                className="btn btn-lg btn-primary btn-block"
-                type="submit"
-              >
-                Acceder
-              </button>
+              <Link to={`/apps`}>
+                <button
+                  className="btn btn-lg btn-primary btn-block"
+                  type="submit"
+                >
+                  Acceder
+                </button>
+              </Link>
+
               <div className="mt-5 mb-3 text-muted">Konsigue ©2018</div>
             </form>
           </div>
